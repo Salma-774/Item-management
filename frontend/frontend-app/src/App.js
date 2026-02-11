@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import ItemForm from "./components/ItemForm";
 import ItemRetrieve from "./components/ItemRetrieve";
 import "./App.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
