@@ -1,0 +1,12 @@
+.metadata/
+# React
+frontend/frontend-app/node_modules
+frontend/frontend-app/build
+
+# Spring Boot
+backend/target
+
+# IDE
+.idea
+.vscode
+*.log
