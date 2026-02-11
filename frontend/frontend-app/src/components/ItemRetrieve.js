@@ -8,7 +8,7 @@ function ItemRetrieve() {
   const [search, setSearch] = useState("");
 
   const retrieveAll = async () => {
-    const res = await axios.get("http://localhost:8080/items");
+    const res = await axios.get("https://item-backend-puhm.onrender.com/items");
     setItems(res.data);
   };
 
@@ -18,7 +18,7 @@ const searchItem = async () => {
   if (!search.trim()) return;
 
   try {
-    const res = await axios.get(`http://localhost:8080/items/${search}`);
+    const res = await axios.get(`https://item-backend-puhm.onrender.com/items/${search}`);
 
     // backend returns ONE object, so convert to array
     setItems([res.data]);

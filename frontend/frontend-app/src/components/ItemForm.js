@@ -34,7 +34,7 @@ function ItemForm() {
 
     if (!validate()) return;
 
-    await axios.post("http://localhost:8080/items", item);
+    await axios.post("https://item-backend-puhm.onrender.com/items", item);
 
     setItem({ name: "", description: "", category: "", price: "" });
     setErrors({});
