@@ -34,7 +34,7 @@ function ItemForm() {
 
     if (!validate()) return;
 
-    await axios.post("https://item-backend-puhm.onrender.com/items", item);
+    await axios.post("https://item-management-bt9v.onrender.com/items", item);
 
     setItem({ name: "", description: "", category: "", price: "" });
     setErrors({});

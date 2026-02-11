@@ -13,7 +13,7 @@ function ItemList(){
   },[]);
 
   const fetchItems=async()=>{
-    const res=await axios.get("https://item-backend-puhm.onrender.com/items");
+    const res=await axios.get("https://item-management-bt9v.onrender.com/items");
     setItems(res.data);
     setFiltered(res.data);
   };
